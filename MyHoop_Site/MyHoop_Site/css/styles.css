@@ -99,7 +99,7 @@ body {
 
 section {
   transform: translate(0%, 12%);
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
 }
 
 .description {
@@ -146,8 +146,10 @@ section {
   background: #383838;
   color: #fff;
   text-align: center;
-  padding: 80px 20px;
-  margin-bottom: 50px;
+  padding: 40px 20px;
+  margin-bottom: 48px;
+  margin-top: 48px;
+
 }
 
 .cta h2 {
@@ -268,4 +270,33 @@ section {
 .icons a:hover {
   transform: scale(1.15);
   opacity: 0.8;
+}
+
+/* About */
+
+.split {
+  display: flex;              /* 🔑 makes them side by side */
+  width: 100%;
+  min-height: 70vh;
+}
+
+/* Image side */
+.split-image {
+  flex: 1;
+}
+
+.split-image img {
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text side */
+.split-text {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
